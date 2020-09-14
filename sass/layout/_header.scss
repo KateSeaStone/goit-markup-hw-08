@@ -1,0 +1,41 @@
+.header {
+  background-color: $primery-white-color;
+  border: 1px solid #ECECEC;
+
+    .link {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 25px 0;
+    position: relative;
+    } 
+
+      .link:hover,
+      .link:focus {
+        color: $accent-color;
+      }
+
+      .link.current {
+      color: $accent-color;
+    }
+}
+/* ========== Logo ========== */ 
+
+.logo {
+  display: flex;
+  margin-right: 93px;
+  color: $title-text-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.19;  
+
+    & > span {
+    color: $accent-color;
+    }
+}
+  

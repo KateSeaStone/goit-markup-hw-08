@@ -1,0 +1,118 @@
+/*=========== Контакты (header) ===========*/
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  
+   .phone {
+  color: $primery-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  
+    &:hover,
+    &:focus {color: $accent-color;}
+  }
+
+   .link {
+    color: $primery-text-color;
+    
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    .phone:hover .contact-list-item-svg {
+      fill: $accent-color;
+    }
+
+    .link:hover .contact-list-item-svg {
+      fill: $accent-color;
+    }
+
+}
+
+
+.contact-list-item {
+  display: flex;
+  align-items: center; 
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    .link,
+    .phone {
+      display: flex;
+      align-items: center; 
+    }
+}
+
+.contact-list-item-svg {
+  fill: $primery-text-color;
+  margin-right: 10px;
+}
+
+.svg-email {
+  width: 16px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.svg-phone {
+  width: 10px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/*=========== Контакты (footer) ===========*/
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+
+    & .link,
+    & .phone {
+    color: $primery-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  
+         .link:hover,
+         .phone:hover,
+         .link:focus,
+         .phone:focus {color: $accent-color;
+        }
+  
+    }
+}
+
+
+.footer-contact-info {
+   margin-right: 70px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-map {
+color: $primery-white-color;  
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration: none;
+margin-bottom: 9px;
+}
+
+.footer-contact-item:not(:last-child) {
+  margin-bottom: 9px;
+}
