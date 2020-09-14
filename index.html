@@ -15,15 +15,15 @@
 
       <!-- Панель навигации -->
       <div class="container">
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-        <button class="burger-btn">
+        <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+        <button class="burger-btn" aria-expanded="false" aria-controls="header-menu" data-menu-button>
           <svg  width="40" height="40" class="menu-icon-svg">
-            <use class="open-menu-icon-svg" href="./images/sprite-header.svg#icon-smartphone"></use>
-            <use class="close-menu-icon-svg" href="./images/mobile-menu.svg#icon-close"></use>
+            <use class="open-menu-icon-svg" href="./images/header/sprite-header.svg#icon-menu-open"></use>
+            <use class="close-menu-icon-svg" href="./images/header/sprite-header.svg#icon-menu-close"></use>
           </svg>
         </button>
         
-        <div class="header-menu">
+        <div class="header-menu" data-menu>
           <nav class="navigation">
             <ul class="navigation-list list">
               <li class="navigation-list-item">
@@ -551,6 +551,7 @@
 </div>
 
 <script src="./js/modal.js"></script> -->
+<script src="./js/menu.js"></script>
   </body>
 
 
