@@ -14,56 +14,66 @@
     <header class="header">
 
       <!-- Панель навигации -->
-      <div class="conteiner">
-        <nav class="navigation">
-          <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-          
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a href="./index.html"  class="link current">Студия</a></li>
-            <li class="navigation-list-item">
-              <a href="./portfolio.html"  class="link">Портфолио</a></li>
-            <li class="navigation-list-item"><a href="" class="link">Контакты</a></li>
-          </ul>
-        </nav>
+      <div class="container">
+        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <button class="burger-btn">
+          <svg  width="40" height="40" class="menu-icon-svg">
+            <use class="open-menu-icon-svg" href="./images/sprite-header.svg#icon-smartphone"></use>
+            <use class="close-menu-icon-svg" href="./images/mobile-menu.svg#icon-close"></use>
+          </svg>
+        </button>
+        
+        <div class="header-menu">
+          <nav class="navigation">
+            <ul class="navigation-list list">
+              <li class="navigation-list-item">
+                <a href="./index.html"  class="link current">Студия</a></li>
+              <li class="navigation-list-item">
+                <a href="./portfolio.html"  class="link">Портфолио</a></li>
+              <li class="navigation-list-item"><a href="" class="link">Контакты</a></li>
+           </ul>
+          </nav>
+
            <!-- Контакты -->
-          <ul class="contact-list list">
-            <li class="contact-list-item">
-              <a href="mailto:info@devstudio.com" class="link">
-                <svg class="contact-list-item-svg svg-email">
-                  <use href="./images/header/sprite-header.svg#icon-envelope">
-                  </use>
-                </svg>
-                <span>info@devstudio.com</span> 
-             </a>   
-            </li>
+            <div class="header-utils">
+              <ul class="contact-list list">
+                <li class="contact-list-item">
+                  <a href="mailto:info@devstudio.com" class="link">
+                    <svg class="contact-list-item-svg svg-email">
+                      <use href="./images/header/sprite-header.svg#icon-envelope">
+                      </use>
+                    </svg>
+                    <span>info@devstudio.com</span> 
+                </a>   
+                </li>
 
-            <li class="contact-list-item"> 
-              <a href="tel:+380961111111" class="phone">
-                <svg class="contact-list-item-svg svg-phone">
-                  <use href="./images/header/sprite-header.svg#icon-smartphone">
-                  </use>
-                </svg>
-                <span>+38 096 111 11 11</span>
-             </a>
-            </li>
-
-          </ul>
+                <li class="contact-list-item"> 
+                  <a href="tel:+380961111111" class="phone">
+                    <svg class="contact-list-item-svg svg-phone">
+                      <use href="./images/header/sprite-header.svg#icon-smartphone">
+                      </use>
+                    </svg>
+                    <span>+38 096 111 11 11</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
       </div>
     </header>
 
-    <main>
+    <!-- <main> -->
      <!--Герой-->
-     <section class="section-hero">
+     <!-- <section class="section-hero">
       <div class="section-hero-box">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
       </div>
-    </section>
+    </section> -->
 
       <!--Наши особенности-->
-      <section class="section-features">
-        <div class="conteiner">
+      <!-- <section class="section-features">
+        <div class="container">
           <h2 class="visually-hidden">Наши особенности</h2>
             <ul class="features-list  list">
               <li class="features-list-item">
@@ -99,11 +109,11 @@
               </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
         <!--Чем мы занимаемся (what we do=wwd)-->
-      <section class="section-wwd">
-        <div class="conteiner">
+      <!-- <section class="section-wwd">
+        <div class="container">
           <h2 class="section-wwd-title">Чем мы занимаемся</h2>
           <ul class="section-wwd-list list" >
             <li class="section-wwd-list-item">
@@ -131,16 +141,16 @@
             </li>
           </ul>
       </div>
-    </section>
+    </section> -->
 
       <!--Наша команда-->
-      <section class="section-team">
-        <div class="conteiner">
+      <!-- <section class="section-team">
+        <div class="container">
         <h2 class="section-team-title">Наша команда</h2>
-        <ul class="team-list list">
+        <ul class="team-list list"> -->
 
           <!--Игорь Демьяненко-->
-          <li class="team-list-item">
+          <!-- <li class="team-list-item">
             <img src="./images/our_team/img-01.jpg" class="team-img" alt="Фото Игоря Демьяненко" width="270" height="260" />
             <h3 class="team-title">Игорь Демьяненко</h3>
             <p class="team-text">Product Designer</p>
@@ -188,10 +198,10 @@
                 </li>
             </ul>
 
-          </li>
+          </li> -->
 
           <!--Ольга Репина-->
-          <li class="team-list-item">
+          <!-- <li class="team-list-item">
             <img src="./images/our_team/img-02.jpg" class="team-img" alt="Фото Ольги Репиной" width="270" height="260" />
             <h3 class="team-title">Ольга Репина</h3>
             <p class="team-text">Frontend Developer</p>
@@ -238,10 +248,10 @@
                         </a>
                     </li>
                 </ul>
-          </li>
+          </li> -->
 
           <!--Николай Тарасов-->
-          <li class="team-list-item">
+          <!-- <li class="team-list-item">
             <img src="./images/our_team/img-03.jpg" class="team-img" alt="Фото Николая Тарасова" width="270" height="260" />
             <h3 class="team-title">Николай Тарасов</h3>
             <p class="team-text">Marketing</p>
@@ -288,10 +298,10 @@
                 </li>
             </ul>
 
-          </li>
+          </li> -->
 
           <!--Михаил Ермаков-->
-          <li class="team-list-item">
+          <!-- <li class="team-list-item">
             <img src="./images/our_team/img-04.jpg" class="team-img" alt="Фото Михаила Ермакова" width="270" height="260" />
             <h3 class="team-title">Михаил Ермаков</h3>
             <p class="team-text">UI Designer</p>
@@ -342,11 +352,11 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- Постоянные клиенты -->
-  <section class="section-our-clients">
-     <div class="conteiner">
+  <!-- <section class="section-our-clients">
+     <div class="container">
       <h2 class="section-our-clients-title">Постоянные клиенты</h2>
         <ul class="our-clients-list list">
 
@@ -397,16 +407,16 @@
     </div>
 
   </section>
-    </main>
+    </main> -->
 
     <!--Футер-->
-    <footer class="footer">
-      <div class="conteiner">
+    <!-- <footer class="footer">
+      <div class="container">
         <div class="footer-contact-info">
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <a href="./index.html" class="logo"><span>Web</span>Studio</a> -->
 
         <!--Адрес-->
-          <address class="address">
+          <!-- <address class="address">
             <a href="https://goo.gl/maps/H4oMKSPXDtihbx1r6" target="_blank" class="address-map">г. Киев, пр-т Леси Украинки, 26</a>
 
             <ul class="footer-contact list">
@@ -414,11 +424,11 @@
               <li class="footer-contact-item"><a href="tel:+380961111111" class="phone">+38 096 111 11 11</a></li>
           </ul>
           </address>
-        </div>
+        </div> -->
 
        <!-- Социальные сети -->
 
-        <div class="footer-social">
+        <!-- <div class="footer-social">
           <p class="footer-social-title">Присоединяйтесь</p>
 
           <ul class="social-list list">
@@ -464,10 +474,10 @@
                   </a>
             </li>
          </ul>
-        </div>
+        </div> -->
 
   <!-- Подпишитесь на рассылку -->
-        <div class="mail-box">
+        <!-- <div class="mail-box">
           <p class="mail-title">Подпишитесь на рассылку</p>
           <form action="#" class="mail-form">
             <input type="email" class="mail-form-input" name="user-mail" required placeholder="E-mail">
@@ -476,10 +486,10 @@
         </div>
 
       </div>
-    </footer>
+    </footer> -->
 
 <!-- === Модальное окно === -->
-
+<!-- 
 <div class="pop-ups is-hidden" data-modal>
   <div class="pop-ups_popup">
     <div class="pop-ups_modal">
@@ -540,7 +550,7 @@
   </div>
 </div>
 
-<script src="./js/modal.js"></script>
+<script src="./js/modal.js"></script> -->
   </body>
 
 

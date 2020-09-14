@@ -69,7 +69,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  /* outline: 1px solid yellow; */
+  outline: 1px solid green;
 }
 
 img {
@@ -98,130 +98,36 @@ button {
   letter-spacing: 0.03em;
 }
 
-.conteiner {
-  margin: 0 auto;
-  width: 1200px;
+.container {
+  width: 100%;
   padding: 0 15px;
 }
 
-.header .conteiner {
+.header .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.footer .conteiner {
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
 }
 
-.header .navigation {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 15px;
+    width: 768px;
+  }
 }
 
-.navigation-list {
-  display: flex;
-}
-
-.navigation-list-item {
-  width: max-content;
-}
-
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.navigation-list-item .link {
-  display: inline-block;
-}
-
-.link.current::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  /* margin-top: 28px; */
-  display: block;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0;
-}
-
-.link.current:hover::after {
-  color: #2196f3;
-}
-
-.link:hover.current::after {
-  background-color: #2196f3;
-}
-
-/*=========== Контакты (header) ===========*/
-.contact-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.contact-list .phone {
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.contact-list .phone:hover, .contact-list .phone:focus {
-  color: #2196f3;
-}
-
-.contact-list .link {
-  color: #757575;
-}
-
-.contact-list .link:hover, .contact-list .link:focus {
-  color: #2196f3;
-}
-
-.contact-list .phone:hover .contact-list-item-svg {
-  fill: #2196f3;
-}
-
-.contact-list .link:hover .contact-list-item-svg {
-  fill: #2196f3;
-}
-
-.contact-list-item {
-  display: flex;
-  align-items: center;
-}
-
-.contact-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contact-list-item .link,
-.contact-list-item .phone {
-  display: flex;
-  align-items: center;
-}
-
-.contact-list-item-svg {
-  fill: #757575;
-  margin-right: 10px;
-}
-
-.svg-email {
-  width: 16px;
-  height: 12px;
-  cursor: pointer;
-}
-
-.svg-phone {
-  width: 10px;
-  height: 16px;
-  cursor: pointer;
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 15px;
+    width: 768px;
+  }
 }
 
 /*=========== Контакты (footer) ===========*/
@@ -343,6 +249,10 @@ button {
   height: 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-btn:focus {
+  outline: none;
 }
 
 .modal-close-btn-svg {
@@ -500,44 +410,36 @@ button {
 }
 
 .header {
-  background-color: #ffffff;
-  border: 1px solid #ECECEC;
+  padding: 10px 15px;
 }
 
-.header .link {
-  color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  padding: 25px 0;
-  position: relative;
-}
-
-.header .link:hover,
-.header .link:focus {
-  color: #2196f3;
-}
-
-.header .link.current {
-  color: #2196f3;
-}
-
-/* ========== Logo ========== */
-.logo {
-  display: flex;
-  margin-right: 93px;
-  color: #212121;
+.header .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  text-decoration: none;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
 }
 
-.logo > span {
+.header .logo > span {
   color: #2196f3;
+}
+
+.header-menu {
+  display: none;
+}
+
+.burger-btn {
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.menu-icon-svg {
+  fill: #212121;
 }
 
 /* Герой */
@@ -608,7 +510,7 @@ button {
   padding-bottom: 94px;
 }
 
-.section-features .conteiner {
+.section-features .container {
   display: flex;
 }
 

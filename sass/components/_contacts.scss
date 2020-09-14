@@ -1,73 +1,73 @@
-/*=========== Контакты (header) ===========*/
+// /*=========== Контакты (header) ===========*/
 
-.contact-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+// .contact-list {
+//   display: flex;
+//   align-items: center;
+//   margin-left: auto;
   
-   .phone {
-  color: $primery-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+//    .phone {
+//   color: $primery-text-color;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
   
-    &:hover,
-    &:focus {color: $accent-color;}
-  }
+//     &:hover,
+//     &:focus {color: $accent-color;}
+//   }
 
-   .link {
-    color: $primery-text-color;
+//    .link {
+//     color: $primery-text-color;
     
-      &:hover,
-      &:focus {
-        color: $accent-color;
-      }
-    }
+//       &:hover,
+//       &:focus {
+//         color: $accent-color;
+//       }
+//     }
 
-    .phone:hover .contact-list-item-svg {
-      fill: $accent-color;
-    }
+//     .phone:hover .contact-list-item-svg {
+//       fill: $accent-color;
+//     }
 
-    .link:hover .contact-list-item-svg {
-      fill: $accent-color;
-    }
+//     .link:hover .contact-list-item-svg {
+//       fill: $accent-color;
+//     }
 
-}
+// }
 
 
-.contact-list-item {
-  display: flex;
-  align-items: center; 
+// .contact-list-item {
+//   display: flex;
+//   align-items: center; 
 
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
+//     &:not(:last-child) {
+//       margin-right: 50px;
+//     }
 
-    .link,
-    .phone {
-      display: flex;
-      align-items: center; 
-    }
-}
+//     .link,
+//     .phone {
+//       display: flex;
+//       align-items: center; 
+//     }
+// }
 
-.contact-list-item-svg {
-  fill: $primery-text-color;
-  margin-right: 10px;
-}
+// .contact-list-item-svg {
+//   fill: $primery-text-color;
+//   margin-right: 10px;
+// }
 
-.svg-email {
-  width: 16px;
-  height: 12px;
-  cursor: pointer;
-}
+// .svg-email {
+//   width: 16px;
+//   height: 12px;
+//   cursor: pointer;
+// }
 
-.svg-phone {
-  width: 10px;
-  height: 16px;
-  cursor: pointer;
-}
+// .svg-phone {
+//   width: 10px;
+//   height: 16px;
+//   cursor: pointer;
+// }
 
 /*=========== Контакты (footer) ===========*/
 
