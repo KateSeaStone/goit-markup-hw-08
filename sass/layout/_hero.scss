@@ -1,61 +1,124 @@
 /* Герой */
+// .hero-title {
+//   color: $primery-white-color;
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase; 
+//   margin-bottom: 30px;
+// }
+
+// .hero-button {
+//   border-radius: 4px;
+//   border: transparent;
+//   font-family: inherit;
+//   color: $primery-white-color;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.87;
+//   letter-spacing: 0.06em;
+//   background-color: $accent-color;
+//   text-decoration: none;
+//   text-align: center;
+//   padding: 10px 32px;
+//   min-width: 200px;
+//   height: 50px;
+  
+//   &:hover
+//  {color: $accent-color;
+//   background-color: $primery-white-color;
+//   }
+
+//     &:focus {
+//     outline: none;
+//   }
+// }
+
+// .section-hero {
+//   display: flex;
+//   min-height: 600px;
+//   max-width: 1600px;
+//   /* padding-top: 50px; */
+//   padding-bottom: 50px;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   justify-content: center; 
+//   align-items: center;
+//   margin-right: auto;
+//   margin-left: auto;
+//   margin-bottom: 94px;
+ 
+//  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg); 
+//  background-repeat: no-repeat;
+//  background-position: center;
+//  background-size: cover;
+//  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+  
+// .section-hero-box {
+//   text-align: center;
+//   max-width: 696px;}
+
+
 .hero-title {
   color: $primery-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase; 
   margin-bottom: 30px;
 }
 
-.hero-button {
-  border-radius: 4px;
-  border: transparent;
-  font-family: inherit;
-  color: $primery-white-color;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  background-color: $accent-color;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px 32px;
-  min-width: 200px;
-  height: 50px;
-  
-  &:hover
- {color: $accent-color;
-  background-color: $primery-white-color;
-  }
-
-    &:focus {
-    outline: none;
-  }
-}
-
 .section-hero {
-  display: flex;
-  min-height: 600px;
-  max-width: 1600px;
-  /* padding-top: 50px; */
-  padding-bottom: 50px;
-  padding-right: 15px;
-  padding-left: 15px;
-  justify-content: center; 
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 94px;
- 
- background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg); 
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
- box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+    display: flex;
+    min-height: 400px;
+    max-width: 480px;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: center; 
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+   
+   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg); 
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+    
+  .section-hero-box {
+    text-align: center;
+    max-width: 360px;}
   
-.section-hero-box {
-  text-align: center;
-  max-width: 696px;}
+  .hero-button {
+    border-radius: 4px;
+    border: transparent;
+    font-family: inherit;
+    color: $primery-white-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: $accent-color;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+        
+    &:hover{
+    color: $accent-color;
+    background-color: $primery-white-color;
+    }
+      
+    &:focus {
+      outline: none;
+    }
+  }
+      

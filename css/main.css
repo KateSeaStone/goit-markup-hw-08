@@ -124,15 +124,15 @@ button {
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 15px;
     width: 768px;
+    padding: 0 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    padding: 0 15px;
     width: 768px;
+    padding: 0 15px;
   }
 }
 
@@ -417,6 +417,8 @@ button {
 
 .header {
   padding: 10px 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header .logo {
@@ -657,12 +659,37 @@ button {
 .hero-title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.section-hero {
+  display: flex;
+  min-height: 400px;
+  max-width: 480px;
+  /* padding-top: 50px; */
+  padding-bottom: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-hero-box {
+  text-align: center;
+  max-width: 360px;
 }
 
 .hero-button {
@@ -689,31 +716,6 @@ button {
 
 .hero-button:focus {
   outline: none;
-}
-
-.section-hero {
-  display: flex;
-  min-height: 600px;
-  max-width: 1600px;
-  /* padding-top: 50px; */
-  padding-bottom: 50px;
-  padding-right: 15px;
-  padding-left: 15px;
-  justify-content: center;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 94px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.section-hero-box {
-  text-align: center;
-  max-width: 696px;
 }
 
 /* ========== Наши особенности ========== */
