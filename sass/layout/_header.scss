@@ -24,6 +24,7 @@
 @media screen and (max-width: 767px) {
     .header {
       position: relative;
+      height: 60px;
     }
 
     .burger-btn {
@@ -49,6 +50,14 @@
     .menu-icon-svg {
       fill: $title-text-color; 
     }
+    
+    .burger-btn.is-open .open-menu-icon-svg {
+      display: none;
+    }
+    
+    .burger-btn.is-open .close-menu-icon-svg {
+      display: block;
+    }   
 
     .close-menu-icon-svg,
     .open-menu-icon-svg {
@@ -59,21 +68,23 @@
           border: transparent;
         }
     }
-     
-    .burger-btn.is-open .open-menu-icon-svg {
-      display: none;
-    }
-    
-    .burger-btn.is-open .close-menu-icon-svg {
-      display: block;
-    }   
 }
 
 @media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
+  }  
+
+  .header {
+    display: flex;
+    height: 80px;
   }
-    .header {
+    
+}
+
+@media screen and (min-width: 768px) and 
+(max-width: 1199px) {
+  .header {
       .logo {
         margin-right: 88px;
       }
@@ -100,7 +111,7 @@
         & > span {
         color: $accent-color;
         }
-    }
+  }
 }
 
 
