@@ -128,11 +128,9 @@
     .burger-btn {
       position: relative;
       z-index: 1;
-      background-color: $primery-white-color;
+      background-color: transparent;
       outline: none;
       border: none;
-      width: 40px;
-      height: 40px;
       text-align: center;
       
         &:focus {
