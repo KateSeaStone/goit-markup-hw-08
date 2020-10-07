@@ -1,7 +1,11 @@
 /* ============ Чем мы занимаемся ================*/
 .section-wwd {
   margin-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;    
   }
+}
 
 .section-wwd-title {
   margin-bottom: 50px;
