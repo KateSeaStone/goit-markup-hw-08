@@ -84,14 +84,11 @@ padding: 15px;
 @media screen and (min-width: 768px) 
         and (max-width: 1199px) {
 
-  .section-features {
-    padding-bottom: 60px;
-
-       .container {
+        .container {
         display: flex;
         padding: 0;
       }
-  }
+  
 
   .features-list-item-icon {
     width: 354px;  
@@ -105,6 +102,13 @@ padding: 15px;
   .features-list-item {
     width: calc(100% / 2);
     padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .section-features {
+    padding-bottom: 60px;
   }
 }
 

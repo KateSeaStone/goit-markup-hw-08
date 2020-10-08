@@ -893,10 +893,7 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-features {
-    padding-bottom: 60px;
-  }
-  .section-features .container {
+  .container {
     display: flex;
     padding: 0;
   }
@@ -910,6 +907,12 @@ button {
   .features-list-item {
     width: calc(100% / 2);
     padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section-features {
+    padding-bottom: 60px;
   }
 }
 
