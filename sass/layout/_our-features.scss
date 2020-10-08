@@ -1,20 +1,5 @@
 /* ========== Наши особенности ========== */
 
-
-.section-features {
-  padding-bottom: 94px;
-  
-    .container {
-    display: flex;
-    }
-}
-
-.features-list {
-display: flex;
-flex-wrap: wrap;
-margin: -15px;
-}
-
 .features-list-title {
 font-weight: 400;
 font-size: 14px;
@@ -22,6 +7,7 @@ line-height: 1.143;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: $title-text-color;
+margin-bottom: 10px;
 }
 
 .features-list-text {
@@ -32,10 +18,8 @@ letter-spacing: 0.03em;
 color: $primery-text-color;
 }
 
-
 .features-list-item {
-width: calc(100% / 4);
-padding: 15px;
+  margin-bottom: 30px;
 }
 
 .features-list-item-icon {
@@ -73,6 +57,76 @@ padding: 15px;
 
 .features-list-item-icon.astronaut::before {
   background-image: url(../images/our_features/astronaut.svg);
-  
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .features-list-item-icon {
+    width: 100%;
+    
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    display: block;
+  }
+  
+  .features-list-item-icon {
+    width: 450px;  
+  }
+}
+
+@media screen and (min-width: 768px) 
+        and (max-width: 1199px) {
+
+  .section-features {
+    padding-bottom: 60px;
+
+       .container {
+        display: flex;
+        padding: 0;
+      }
+  }
+
+  .features-list-item-icon {
+    width: 354px;  
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-list-item {
+    width: calc(100% / 2);
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .section-features {
+      padding-bottom: 94px;
+  
+      .container {
+        display: flex;
+      }
+}
+
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    .features-list-item {
+      width: calc(100% / 4);
+      padding: 15px;
+    }
+
+}
