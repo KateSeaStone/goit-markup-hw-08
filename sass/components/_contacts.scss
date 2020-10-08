@@ -71,48 +71,56 @@
 
 /*=========== Контакты (footer) ===========*/
 
-.footer-contact {
-  display: flex;
-  flex-direction: column;
+.address-map {
+  color: $primery-white-color;  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
 
-    & .link,
-    & .phone {
+.footer-contact-info {
+  margin-bottom: 60px;
+}
+
+.footer-contact {
+     .link,
+     .phone {
     color: $primery-text-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-bottom: 8px;
   
-         .link:hover,
-         .phone:hover,
-         .link:focus,
-         .phone:focus {color: $accent-color;
+        .link:hover,
+        .phone:hover,
+        .link:focus,
+        .phone:focus {color: $accent-color;
         }
   
     }
 }
 
 
-.footer-contact-info {
-   margin-right: 70px;
-}
+@media screen and (min-width: 1200px) {
+    .footer-contact-info {
+        text-align: left;
+        margin-right: 70px;
+    }
 
-.address {
-  display: flex;
-  flex-direction: column;
-}
+    .address-map {
+     margin-bottom: 9px;
+    }
 
-.address-map {
-color: $primery-white-color;  
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-text-decoration: none;
-margin-bottom: 9px;
-}
-
-.footer-contact-item:not(:last-child) {
-  margin-bottom: 9px;
+    .footer-contact {
+      .link,
+      .phone {
+        margin-bottom: 9px;
+      }
+     
+    }
 }

@@ -1,124 +1,240 @@
 
-/* ========== Футер ========= */
-/* =========================== */
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: $hero-footer-background-color;
+    .footer {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background-color: $hero-footer-background-color;
 
-    & .logo {
-    color: $primery-white-color;
-    font-family: Raleway;
+         .logo {
+        color: $primery-white-color;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.167;
+        text-decoration: none;
+        margin: 0 0 20px;
+      
+          &.logo > span {
+          color: $accent-color;
+        }
+      }
+
+      .container {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .footer-social {
+      margin-bottom: 60px;
+    }
+
+    .footer-social-title {
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-    margin: 0 0 20px;
-  
-      .logo > span {
-      color: $accent-color;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primery-white-color;
+    margin-bottom: 20px;
     }
-  }
-}
 
-/* =========== Присоединяйтесь =========== */
-.footer-social {
-  margin-right: 93px;
-}
+    .mail-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $primery-white-color;
+      margin-bottom: 20px;
+    }
 
-.footer-social-title {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.142;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: $primery-white-color;
-margin-bottom: 20px;
-}
+    .mail-box {
+      display: block;
+      text-align: center;
+    }
 
-/* ===========Подпишитесь на рассылку=========== */
-.mail-box {
-display: flex;
-width: 570px;
-height: 86px;
-margin-bottom: 94px;
-flex-wrap: wrap;
+    .mail-form-input {
+      padding: 0 16px;
+      width: 450px;
+      height: 50px;
+      border: none;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: transparent;
+      margin-bottom: 20px;
+  
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: $primery-white-color;
+  
+          &:focus {
+            outline: none;
+            border: 1px solid $primery-white-color;
+          }
+    }
 
-}
+    .mail-button {
+      align-items: center;
+      border-radius: 4px;
+      border: transparent;
+      font-family: inherit;
+      color: $primery-white-color;
 
-.mail-title {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.143;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: $primery-white-color;
-margin-bottom: 20px;
-}
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.06em;
 
-.mail-form {
-width: 570px;
-height: 50px;
-display: flex;
-}
-
-.mail-form-input {
-padding: 0 16px;
-width: 358px;
-height: 50px;
-border: none;
-border-radius: 4px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-background-color: transparent;
-margin-right: 12px;
-
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
-color: $primery-white-color;
-
-    &:focus {
+      background-color: $accent-color;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px 29px;
+      min-width: 200px;
+      height: 50px;
+      
+      &:focus {
       outline: none;
-      border: 1px solid $primery-white-color;
+      border: 1px solid $primery-white-color; 
+      }
+
+      &::after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      color: $primery-white-color;
+      background-image: url(../images/sociallink/icon-send.svg);
+      background-size: contain;
+      margin-left: 10px;
+      }
     }
+
+@media screen and (max-width: 479px) {
+  .mail-form-input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+   .footer 
+     .container {
+       padding: 0 60px;
+       display: flex;
+       flex-wrap: wrap;
+     }
+   
+   .footer-contact-info {
+     margin-right: 165px;
+   }
 }
 
 
+@media screen and (min-width: 1200px) {
+    .footer {
+          padding-top: 60px;
+          padding-bottom: 60px;
+          background-color: $hero-footer-background-color;
 
-.mail-button {
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
-  border: transparent;
-  font-family: inherit;
-  color: $primery-white-color;
+            & .logo {
+            color: $primery-white-color;
+            font-family: Raleway;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            text-decoration: none;
+            margin: 0 0 20px;
+          
+              .logo > span {
+              color: $accent-color;
+            }
+          }
+          
+        .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+    }
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+    .footer-social {
+      margin-right: 93px;
+    }
 
-  background-color: $accent-color;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px 29px;
-  min-width: 200px;
-  height: 50px;
-  
-  &:focus {
-  outline: none;
-  border: 1px solid $primery-white-color; 
-  }
+    .mail-box {
+    display: flex;
+    width: 570px;
+    height: 86px;
+    margin-bottom: 94px;
+    flex-wrap: wrap;
 
-  &::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  color: $primery-white-color;
-  background-image: url(../images/sociallink/icon-send.svg);
-  background-size: contain;
-  margin-left: 10px;
-  }
+    }
+
+    .mail-form {
+    width: 570px;
+    height: 50px;
+    display: flex;
+    }
+
+    .mail-form-input {
+    padding: 0 16px;
+    width: 358px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    margin-right: 12px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $primery-white-color;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $primery-white-color;
+        }
+    }
+
+
+
+    .mail-button {
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      border: transparent;
+      font-family: inherit;
+      color: $primery-white-color;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.06em;
+
+      background-color: $accent-color;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px 29px;
+      min-width: 200px;
+      height: 50px;
+      
+      &:focus {
+      outline: none;
+      border: 1px solid $primery-white-color; 
+      }
+
+      &::after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      color: $primery-white-color;
+      background-image: url(../images/sociallink/icon-send.svg);
+      background-size: contain;
+      margin-left: 10px;
+      }
+    }
+
 }
-/* ================End футера=============== */

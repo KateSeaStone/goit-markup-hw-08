@@ -356,9 +356,18 @@ button {
 }
 
 /*=========== Контакты (footer) ===========*/
-.footer-contact {
-  display: flex;
-  flex-direction: column;
+.address-map {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-contact-info {
+  margin-bottom: 60px;
 }
 
 .footer-contact .link,
@@ -369,6 +378,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-bottom: 8px;
 }
 
 .footer-contact .link .link:hover,
@@ -382,27 +392,18 @@ button {
   color: #2196f3;
 }
 
-.footer-contact-info {
-  margin-right: 70px;
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
-}
-
-.address-map {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-bottom: 9px;
-}
-
-.footer-contact-item:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (min-width: 1200px) {
+  .footer-contact-info {
+    text-align: left;
+    margin-right: 70px;
+  }
+  .address-map {
+    margin-bottom: 9px;
+  }
+  .footer-contact .link,
+  .footer-contact .phone {
+    margin-bottom: 9px;
+  }
 }
 
 .header {
@@ -631,8 +632,6 @@ button {
   color: #ffffff;
 }
 
-/* ========== Футер ========= */
-/* =========================== */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -643,19 +642,23 @@ button {
   color: #ffffff;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.167;
   text-decoration: none;
   margin: 0 0 20px;
 }
 
-.footer .logo .logo > span {
+.footer .logo.logo > span {
   color: #2196f3;
 }
 
-/* =========== Присоединяйтесь =========== */
+.footer .container {
+  display: block;
+  text-align: center;
+}
+
 .footer-social {
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .footer-social-title {
@@ -668,15 +671,6 @@ button {
   margin-bottom: 20px;
 }
 
-/* ===========Подпишитесь на рассылку=========== */
-.mail-box {
-  display: flex;
-  width: 570px;
-  height: 86px;
-  margin-bottom: 94px;
-  flex-wrap: wrap;
-}
-
 .mail-title {
   font-weight: 700;
   font-size: 14px;
@@ -687,21 +681,20 @@ button {
   margin-bottom: 20px;
 }
 
-.mail-form {
-  width: 570px;
-  height: 50px;
-  display: flex;
+.mail-box {
+  display: block;
+  text-align: center;
 }
 
 .mail-form-input {
   padding: 0 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: none;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
-  margin-right: 12px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -715,7 +708,6 @@ button {
 }
 
 .mail-button {
-  display: flex;
   align-items: center;
   border-radius: 4px;
   border: transparent;
@@ -748,5 +740,111 @@ button {
   margin-left: 10px;
 }
 
-/* ================End футера=============== */
+@media screen and (max-width: 479px) {
+  .mail-form-input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer
+.container {
+    padding: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-contact-info {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+  }
+  .footer .logo {
+    color: #ffffff;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    margin: 0 0 20px;
+  }
+  .footer .logo .logo > span {
+    color: #2196f3;
+  }
+  .footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-social {
+    margin-right: 93px;
+  }
+  .mail-box {
+    display: flex;
+    width: 570px;
+    height: 86px;
+    margin-bottom: 94px;
+    flex-wrap: wrap;
+  }
+  .mail-form {
+    width: 570px;
+    height: 50px;
+    display: flex;
+  }
+  .mail-form-input {
+    padding: 0 16px;
+    width: 358px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    margin-right: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  .mail-form-input:focus {
+    outline: none;
+    border: 1px solid #ffffff;
+  }
+  .mail-button {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: transparent;
+    font-family: inherit;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: #2196f3;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 29px;
+    min-width: 200px;
+    height: 50px;
+  }
+  .mail-button:focus {
+    outline: none;
+    border: 1px solid #ffffff;
+  }
+  .mail-button::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+    background-image: url(../images/sociallink/icon-send.svg);
+    background-size: contain;
+    margin-left: 10px;
+  }
+}
 /*# sourceMappingURL=portfolio.css.map */
