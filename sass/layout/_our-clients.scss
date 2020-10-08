@@ -1,47 +1,148 @@
 /* ========== Постоянные клиенты ========== */
+
 .section-our-clients {
-  margin-bottom: 94px;
   text-align: center;
+
+    .container {
+      display: block;
+      text-align: center;
+      padding: 0 15px;
+    }
 }
 
-.section-our-clients-title {
-  color: $title-text-color;
-  margin-bottom: 50px;
+  .section-our-clients-title {
+    color: $title-text-color;
+    margin-bottom: 30px;
+  }
+
+  .our-clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-clients-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 90px;
+    background-color: $primery-white-color;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    align-items: center;
+
+       &:hover {
+        border: 1px solid $accent-color;
+        
+            .clients-logo-svg{
+              fill: $accent-color;
+            } 
+      }
+  }
+
+    .clients-logo-svg {
+    fill: #AFB1B8;
+    }
+
+@media screen and (max-width: 479px) {
+      .our-clients-list-item {
+        margin-bottom: 30px;
+      }
+    }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section-our-clients {
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+  
+  .our-clients-list-item {
+   margin-bottom: 30px;
+  }
+
+  .our-clients-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
 }
 
-.our-clients-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-our-clients {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+}
 
-.our-clients-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  background-color: $primery-white-color;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  align-items: center;
+    .our-clients-list-item {
+    margin-bottom: 30px;
+    }
 
-      &:not(:last-child) {
+    .our-clients-list-item:not(:nth-child(3n)) {
       margin-right: 30px;
     }
-  
-    &:hover {
-      border: 1px solid $accent-color;
-      
-          .clients-logo-svg{
-            fill: $accent-color;
-          } 
+}
+
+@media screen and (max-width: 1199px) {
+    .section-our-clients {
+      padding-top: 60px;
+      margin-bottom: 60px;
+      text-align: center;
     }
 }
 
-.clients-logo-svg {
-fill: #AFB1B8;
- }
+@media screen and (min-width: 1200px) {
+    .section-our-clients {
+      margin-bottom: 94px;
+      text-align: center;
+    }
+
+    .section-our-clients-title {
+       margin-bottom: 50px;
+    }
+
+    .our-clients-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .our-clients-list-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 90px;
+      background-color: $primery-white-color;
+      border: 1px solid #AFB1B8;
+      border-radius: 4px;
+      align-items: center;
+
+          &:not(:last-child) {
+          margin-right: 30px;
+        }
+      
+        &:hover {
+          border: 1px solid $accent-color;
+          
+              .clients-logo-svg{
+                fill: $accent-color;
+              } 
+        }
+    }
+
+    .clients-logo-svg {
+    fill: #AFB1B8;
+    }
+}
 
 
 
