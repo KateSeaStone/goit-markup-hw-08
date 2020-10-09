@@ -1118,16 +1118,6 @@ button {
 }
 
 /* ========== Постоянные клиенты ========== */
-.section-our-clients {
-  text-align: center;
-}
-
-.section-our-clients .container {
-  display: block;
-  text-align: center;
-  padding: 0 15px;
-}
-
 .section-our-clients-title {
   color: #212121;
   margin-bottom: 30px;
@@ -1149,7 +1139,6 @@ button {
   background-color: #ffffff;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  align-items: center;
 }
 
 .our-clients-list-item:hover {
@@ -1165,8 +1154,12 @@ button {
 }
 
 @media screen and (max-width: 479px) {
+  .our-clients-list {
+    display: inline-block;
+    text-align: center;
+  }
   .our-clients-list-item {
-    margin-bottom: 30px;
+    margin: 0 0 30px;
   }
 }
 

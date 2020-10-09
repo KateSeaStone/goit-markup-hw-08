@@ -1,14 +1,14 @@
 /* ========== Постоянные клиенты ========== */
 
-.section-our-clients {
-  text-align: center;
+// .section-our-clients {
+//   text-align: center;
 
-    .container {
-      display: block;
-      text-align: center;
-      padding: 0 15px;
-    }
-}
+//     .container {
+//       display: block;
+//       text-align: center;
+//       padding: 0 15px;
+//     }
+// }
 
   .section-our-clients-title {
     color: $title-text-color;
@@ -31,8 +31,7 @@
     background-color: $primery-white-color;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    align-items: center;
-
+    
        &:hover {
         border: 1px solid $accent-color;
         
@@ -47,10 +46,16 @@
     }
 
 @media screen and (max-width: 479px) {
-      .our-clients-list-item {
-        margin-bottom: 30px;
-      }
+
+    .our-clients-list {
+      display: inline-block;
+      text-align: center;
     }
+
+      .our-clients-list-item {
+        margin: 0 0 30px;
+    }
+}
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .section-our-clients {
