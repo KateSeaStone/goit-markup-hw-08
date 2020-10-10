@@ -445,19 +445,19 @@ button {
 
 /* поддерживающий div для модального окна, по
   которому центрируем модальное окно */
-.pop-ups_popup {
+.pop-ups_backdrop {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  overflow: hidden auto;
-  padding: 20px 0;
+  padding: 80px 15px;
   display: flex;
+  overflow-y: scroll;
 }
 
 .pop-ups_modal {
-  max-width: 528px;
+  max-width: 450px;
   width: 100%;
   min-height: 581px;
   padding: 40px;
@@ -622,8 +622,8 @@ button {
 .modal-form-label-checkbox-text,
 .modal-form-label-checkbox-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   margin-right: 4px;
 }
@@ -647,6 +647,45 @@ button {
   letter-spacing: 0.06em;
   color: #ffffff;
   outline: none;
+}
+
+@media screen and (max-width: 479px) {
+  .pop-ups_modal {
+    padding: 25px;
+  }
+  .modal-form-label-checkbox {
+    flex-wrap: wrap;
+  }
+  .modal-form-label-checkbox-text,
+  .modal-form-label-checkbox-link {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form-label-checkbox {
+    flex-wrap: wrap;
+  }
+  .modal-form-label-checkbox-text,
+  .modal-form-label-checkbox-link {
+    line-height: 1.8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-label-checkbox-text,
+  .modal-form-label-checkbox-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-right: 4px;
+  }
+  .pop-ups_modal {
+    max-width: 528px;
+    width: 100%;
+  }
 }
 
 .header {
