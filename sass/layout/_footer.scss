@@ -76,6 +76,7 @@
     }
 
     .mail-button {
+      display: inline-flex;
       align-items: center;
       border-radius: 4px;
       border: transparent;
@@ -100,11 +101,12 @@
       }
 
       &::after {
+      // display: inline-block;
       content: "";
       width: 24px;
       height: 24px;
       color: $primery-white-color;
-      background-image: url(../images/sociallink/iconsend.svg);
+      background-image: url(../images/sociallink/icon-send.svg);
       background-size: contain;
       margin-left: 10px;
       }
@@ -115,40 +117,7 @@
     width: 100%;
   }
 
-  .mail-button {
-    align-items: center;
-    border-radius: 4px;
-    border: transparent;
-    font-family: inherit;
-    color: $primery-white-color;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-
-    background-color: $accent-color;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 29px;
-    min-width: 200px;
-    height: 50px;
-    
-    &:focus {
-    outline: none;
-    border: 1px solid $primery-white-color; 
-    }
-
-    &::after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    color: $primery-white-color;
-    background-image: url(../images/sociallink/icon-send.svg);
-    background-size: contain;
-    margin-left: 10px;
-    }
-  }
+  
 
 }
 
@@ -267,7 +236,7 @@
       width: 24px;
       height: 24px;
       color: $primery-white-color;
-     background-image: url(../images/sociallink/icon-send.svg);
+      background-image: url(../images/sociallink/icon-send.svg);
       background-size: contain;
       margin-left: 10px;
      }
