@@ -167,11 +167,6 @@ button {
   color: #2196f3;
 }
 
-.contact-list .phone:hover .contact-list-item-svg,
-.contact-list .link:hover .contact-list-item-svg {
-  fill: #2196f3;
-}
-
 @media screen and (max-width: 767px) {
   .header {
     position: relative;
@@ -286,9 +281,25 @@ button {
     line-height: 1.167;
     letter-spacing: 0.02em;
   }
-  .svg-email, .svg-phone {
+  .contact-list .phone:hover .contact-list-item-svg {
+    fill: #2196f3;
+  }
+  .contact-list .link:hover .contact-list-item-svg {
+    fill: #2196f3;
+  }
+  .svg-email {
     width: 14px;
     height: 10px;
+    cursor: pointer;
+  }
+  .svg-phone {
+    width: 10px;
+    height: 14px;
+    cursor: pointer;
+  }
+  .contact-list-item-svg {
+    fill: #757575;
+    margin-right: 8px;
   }
 }
 
@@ -329,12 +340,6 @@ button {
     display: flex;
     align-items: center;
     margin-left: auto;
-  }
-  .contact-list .phone:hover .contact-list-item-svg {
-    fill: #2196f3;
-  }
-  .contact-list .link:hover .contact-list-item-svg {
-    fill: #2196f3;
   }
   .contact-list-item {
     display: flex;
