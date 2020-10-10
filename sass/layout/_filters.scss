@@ -1,10 +1,27 @@
 /* Портфолио */
 .portfolio {
-  padding-bottom: 94px;
-  padding-top: 94px;
- }
+  .container {
+    width: 100%;
+    padding: 60px 15px;
+      
+    display: block;
+    text-align: center;    
+  }
+}
 
-/* Фильтры */
+.filter {
+  display: flex; 
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter-item {
+  margin-bottom: 15px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter-button {
   font-weight: 500;
@@ -28,21 +45,44 @@
       color: $primery-white-color;
       background-color: $accent-color;
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      outline: none;
     }
 }
 
 
-.portfolio .container {
-  display: flex;
-  flex-direction: column;
- }
-
-.filter {
-  display: flex; 
-  margin: 0 auto;
-  margin-bottom: 34px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio {
+    .container {
+      width: 768px;
+    }
+  
+  
+  .filter {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
 }
 
-.filter-item:not(:last-child) {
-  margin-right: 8px;
+
+@media screen and (min-width: 1200px) {
+
+  .portfolio {
+    .container {
+        width: 1200px;
+        padding: 94px 15px;
+        
+        display: flex;
+        flex-direction: column;
+   }
+  }
+  
+    .filter {
+      display: flex; 
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+ 
+
 }
