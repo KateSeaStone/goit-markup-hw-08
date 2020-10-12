@@ -164,8 +164,10 @@ button {
   text-decoration: none;
 }
 
-.contact-list .phone:hover, .contact-list .link:hover,
-.contact-list .phone:focus, .contact-list .link:focus {
+.contact-list .phone:hover,
+.contact-list .link:hover,
+.contact-list .phone:focus,
+.contact-list .link:focus {
   color: #2196f3;
 }
 
@@ -277,7 +279,8 @@ button {
   .link:hover.current::after {
     background-color: #2196f3;
   }
-  .contact-list .phone, .contact-list .link {
+  .contact-list .phone,
+  .contact-list .link {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.167;
@@ -326,7 +329,6 @@ button {
   .header .container {
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   .header .logo {
     margin-right: 93px;
@@ -334,6 +336,9 @@ button {
   .header-menu {
     display: flex;
     align-items: center;
+  }
+  .navigation {
+    margin-right: 305px;
   }
   .navigation-list {
     display: flex;
@@ -688,12 +693,6 @@ button {
     max-width: 528px;
     width: 100%;
   }
-}
-
-.header {
-  padding: 10px 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .header .logo {
