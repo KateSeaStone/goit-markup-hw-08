@@ -800,6 +800,7 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  padding: 0 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -875,9 +876,15 @@ button {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-hero-box {
+    padding: 0 160px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section-hero-box {
-    padding: 200px 350px;
+    padding: 0 250px;
   }
 }
 
