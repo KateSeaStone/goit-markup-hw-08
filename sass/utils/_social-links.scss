@@ -1,43 +1,45 @@
 .social-list {
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  }
-  
+}
+
 .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
-  
+
 .social-list-item-link {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 44px;
-height: 44px;
-background-color: #ffffff;
-border-radius: 50%; 
-    
-    &:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: $primery-white-color;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover {
     background-color: $accent-color;
 
-       .social-list-item-svg {
-    fill: $primery-white-color;
-    }
-  } 
-
-  .footer & {
-    background-color: $primery-text-color;
-    
-      &:hover {
-        background-color: $accent-color;
+    .social-list-item-svg {
+      fill: $primery-white-color;
     }
   }
-} 
+
+  .footer & {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 44px;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+}
 
 .social-list-item-svg {
- width: 20px;
- height: 20px;
- fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 
   .footer & {
     width: 20px;
@@ -45,8 +47,3 @@ border-radius: 50%;
     fill: $primery-white-color;
   }
 }
-   
-
-  
-
-  

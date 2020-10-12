@@ -33,6 +33,7 @@
   width: 44px;
   height: 44px;
   background-color: #ffffff;
+  height: 44px;
   border-radius: 50%;
 }
 
@@ -45,7 +46,8 @@
 }
 
 .footer .social-list-item-link {
-  background-color: #757575;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 44px;
 }
 
 .footer .social-list-item-link:hover {
@@ -55,7 +57,7 @@
 .social-list-item-svg {
   width: 20px;
   height: 20px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .footer .social-list-item-svg {
@@ -757,6 +759,7 @@ button {
     display: none;
   }
   .header {
+    border-bottom: 1px solid #ececec;
     display: flex;
     height: 80px;
   }
@@ -770,9 +773,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .header {
-    width: 100%;
     background-color: #ffffff;
-    border: 1px solid #ECECEC;
   }
   .logo {
     display: flex;
@@ -799,6 +800,13 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.363;
+  }
 }
 
 .section-hero {
@@ -865,6 +873,12 @@ button {
 .section-hero-box {
   text-align: center;
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero-box {
+    padding: 200px 350px;
+  }
 }
 
 .hero-button {

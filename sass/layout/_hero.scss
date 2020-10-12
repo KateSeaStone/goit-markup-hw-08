@@ -69,6 +69,11 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.363;
+  }
 }
 
 .section-hero {
@@ -139,6 +144,10 @@
 .section-hero-box {
   text-align: center;
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 350px;
+  }
 }
 
 .hero-button {

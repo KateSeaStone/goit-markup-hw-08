@@ -33,6 +33,7 @@
   width: 44px;
   height: 44px;
   background-color: #ffffff;
+  height: 44px;
   border-radius: 50%;
 }
 
@@ -45,7 +46,8 @@
 }
 
 .footer .social-list-item-link {
-  background-color: #757575;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 44px;
 }
 
 .footer .social-list-item-link:hover {
@@ -55,7 +57,7 @@
 .social-list-item-svg {
   width: 20px;
   height: 20px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .footer .social-list-item-svg {
@@ -489,6 +491,7 @@ button {
     display: none;
   }
   .header {
+    border-bottom: 1px solid #ececec;
     display: flex;
     height: 80px;
   }
@@ -502,9 +505,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .header {
-    width: 100%;
     background-color: #ffffff;
-    border: 1px solid #ECECEC;
   }
   .logo {
     display: flex;
@@ -600,6 +601,7 @@ button {
 
 .project-list-item {
   width: 100%;
+  border: 1px solid #eeeeee;
 }
 
 .project-list-item .link {
@@ -631,6 +633,8 @@ button {
 
 .project-list-item-footer {
   padding: 20px 24px;
+  display: block;
+  text-align: left;
 }
 
 .project-list-item-img {
@@ -671,7 +675,7 @@ button {
   color: #ffffff;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .project-img {
     width: 100%;
   }
@@ -681,9 +685,15 @@ button {
   .project-list-item {
     width: 450px;
   }
+  .project-list-item .project-img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio {
+    padding: 30px;
+  }
   .project-list-item {
     width: 354px;
   }
@@ -703,7 +713,7 @@ button {
   .project-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
-  .project-list-item:not(:nth-last-child(-n+3)) {
+  .project-list-item:not(:nth-child(-n + 3)) {
     margin-bottom: 30px;
   }
   .project-list {
