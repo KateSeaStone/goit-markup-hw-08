@@ -941,7 +941,7 @@ button {
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   margin-bottom: 30px;
   padding: 15px;
 }
@@ -993,7 +993,7 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
+  .section-features .container {
     display: flex;
     padding: 0;
   }
